@@ -3,6 +3,7 @@ import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
+  // インスタンス化されたサービスはIoCコンテナーでcacheされる: Singleton
   constructor(private readonly appService: AppService) {}
 
   @Get()
