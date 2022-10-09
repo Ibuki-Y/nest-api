@@ -35,6 +35,6 @@ export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
     });
     delete user.hashedPassword;
 
-    return user;
+    return user; // user情報をリクエストに返す
   }
 }
